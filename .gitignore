@@ -14,14 +14,13 @@ wheels/
 
 ## local folders
 
-# dataset caching
+# Dataset caching and artifacts
 /data/
+/dataset/
+dataset/**
 
-# model checkpoints und runs
+# Model checkpoints and runs
 /runs/
 
-# run evaluations und plots
+# Run evaluations and plots
 /plots/
-
-#dataset
-/dataset/
