@@ -22,3 +22,6 @@ wheels/
 
 # run evaluations und plots
 /plots/
+
+#dataset
+/dataset/
