@@ -47,7 +47,14 @@ def looks_like_code(text: str) -> bool:
     return sum(1 for m in CODE_MARKERS if m in text) >= 3
 
 
-def replace_urls(text: str, placeholder: str = "<url>") -> str:
+def replace_urls(
+    text: str,
+    placeholder: str = "<url>",
+    url_placeholder: str | None = None,
+) -> str:
+    """Replace URLs with a placeholder. `url_placeholder` kept for backwards compatibility."""
+    if url_placeholder is not None:
+        placeholder = url_placeholder
     return URL_RE.sub(placeholder, text)
 
 

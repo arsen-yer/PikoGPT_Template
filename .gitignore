@@ -26,3 +26,8 @@ notebooks/dataset/**
 
 # Run evaluations and plots
 /plots/
+
+# files
+*.log
+*.json
+*.jsonl
