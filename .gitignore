@@ -18,6 +18,8 @@ wheels/
 /data/
 /dataset/
 dataset/**
+/notebooks/dataset/
+notebooks/dataset/**
 
 # Model checkpoints and runs
 /runs/
