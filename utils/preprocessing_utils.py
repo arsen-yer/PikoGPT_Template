@@ -187,3 +187,19 @@ def remove_overlap(texts: Sequence[str], test_sents: set) -> List[str]:
             continue
         keep.append(t)
     return keep
+
+
+def calculate_subset_size(total_size: int, percentage: float = 100.0) -> int:
+    """
+    Calculate how many documents to process based on percentage.
+    
+    Args:
+        total_size: Total number of documents in dataset
+        percentage: Percentage to process (0-100), default 100
+    
+    Returns:
+        Number of documents to process
+    """
+    if percentage <= 0 or percentage > 100:
+        raise ValueError("Percentage must be between 0 and 100")
+    return int(total_size * (percentage / 100))
